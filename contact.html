@@ -1,0 +1,78 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Ultra&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/de80e96549.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>Digital Camp</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+	<script src="index.js"></script>
+  </body>
+</html>
+<body>
+    <main>
+        <header>
+          <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #5ee6eb;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img class="logo" src="./images/logo.png"/></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About the Camp</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="who-are-we.html">Who Are We</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <h1 class="page-title">Contact Us</h1>
+
+        <h2>Please enter your details and message below</h2>
+
+        <div class="form-div">                       
+                <form action="mail.php" method="post">
+                        <div class="form-floating mb-3 form-input">
+                            <input class="form-control" name="Name" id="floatingInput" type="text" width=100px placeholder="Name" required/>
+                            <label for="floatingInput"> <i class="fa-solid fa-user"></i>Name</label>
+                        </div>
+    
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="Email" id="floatingInput" type="email" placeholder="Email Address" required/>
+                            <label for="floatingInput"><i class="fa-solid fa-envelope"></i>Email Address</label>
+                        </div>           
+                        
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Message" id="floatingTextarea2" name="Message" style="height: 100px" required></textarea>
+                            <label for="floatingTextarea2"><i class="fa-solid fa-comments"></i>Message</label>
+                        </div>
+
+                    <button type="submit" class="contact-btn"><i class="fa-solid fa-paper-plane"></i>Submit</button>
+                </form>
+        </div>            
+                  
+        
+    </main>
+    <footer>
+
+    </footer>
+</body>

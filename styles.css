@@ -1,0 +1,250 @@
+/* #4D77FF
+#56BBF1
+#5EE6EB
+#F2FA5A
+rgb(77, 119, 255)
+rgb(86, 187, 241)
+rgb(94, 230, 235)
+rgb(242, 250, 90) */
+/* https://colorhunt.co/palette/4d77ff56bbf15ee6ebf2fa5a */
+
+/* GLOBAL STYLES */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-yellow: #f2fa5a;
+  --clr-blue: #4d59ff;
+  --clr-lightblue: #56bbf1;
+  --clr-turquoise: #5ee6eb;
+
+  --font-primary: "Lato", sans-serif;
+  --font-secondary: "Ultra", serif;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: var(--font-secondary);
+  font-weight: 100;
+  text-align: center;
+  color: var(--clr-blue);
+}
+
+h2 {
+  font-family: var(--font-primary);
+  font-weight: 900;
+  font-size: 20px;
+  text-align: center;
+  color: var(--clr-lightblue);
+}
+
+/* NAVBAR */
+
+.logo {
+  height: 80px;
+  width: 200px;
+}
+
+@media screen and (max-width: 1005px) {
+  .logo {
+    height: 60px;
+    width: 180px;
+  }
+}
+
+nav {
+  position: fixed;
+  font-family: var(--font-primary);
+  font-weight: 900;
+  height: 80px;
+}
+
+.navbar .navbar-nav .nav-link {
+  padding: 10px;
+  color: var(--clr-blue);
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--clr-yellow);
+}
+
+.navbar .navbar-nav .nav-link:visited {
+  color: none;
+}
+
+.navbar .navbar-nav .nav-link.active {
+  color: var(--clr-yellow);
+}
+
+/* HOMEPAGE */
+.page-title {
+  margin-top: 20px;
+}
+
+/* ABOUT BOOTSTRAP */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+}
+
+.container .box {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  /* margin: 10px; */
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  cursor: pointer;
+  margin-right: 50px;
+  margin-bottom: 30px;
+}
+
+.container .box .body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: 1.5s ease;
+}
+
+.container .box .body .imgContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.container .box .body .imgContainer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container .box .body .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+}
+
+.container .box:hover .body {
+  transform: rotateY(180deg);
+}
+
+.container .box .body .content div {
+  transform-style: preserve-3d;
+  padding: 20px;
+  background: linear-gradient(45deg, var(--clr-blue), var(--clr-turquoise));
+  transform: translateZ(100px);
+}
+
+.container .box .body .content div h3 {
+  letter-spacing: 1px;
+}
+
+.about-h2 {
+  margin-bottom: 20px;
+}
+
+/* WHO ARE WE */
+.team-div {
+  display: flex;
+  justify-content: center;
+}
+
+.team-role {
+  color: var(--clr-lightblue);
+  font-family: var(--font-primary);
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+/* CONTACT */
+.contact-title {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.form-div {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+form {
+  font-family: var(--font-primary);
+  width: 90%;
+  max-width: 600px;
+}
+
+h3 {
+  font-family: var(--font-primary);
+  text-align: center;
+  color: var(--clr-blue);
+  font-size: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 2px solid;
+  color: var(--clr-lightblue);
+}
+
+label {
+  height: 100%;
+  padding: 10px;
+  color: var(--clr-lightblue);
+  cursor: text;
+  transition: 0.2s;
+}
+
+.form-floating textarea {
+  height: 500px;
+}
+
+.form-floating {
+  margin-bottom: 20px;
+}
+
+.contact-btn {
+  padding: 10px 0;
+  background: var(--clr-blue);
+  border: 1px solid var(--clr-blue);
+  outline: none;
+  width: 100%;
+  color: var(--clr-yellow);
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: var(--font-primary);
+  font-weight: 900;
+  font-size: 15px;
+}
